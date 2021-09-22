@@ -1,4 +1,4 @@
-module github.com/tjfoc/gmtls
+module github.com/ChinaArJun/fabric-sdk-go-gm/tjfoc/gmtls
 
 go 1.12
 

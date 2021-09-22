@@ -40,11 +40,11 @@ require (
 )
 
 replace (
-	github.com/ChinaArJun/fabric-sdk-go-gm/cfssl v0.0.0-20210922064845-3c3d2e71b967 => ./cfssl
-	github.com/spf13/cast v1.3.1 => ./spf13/cast
-	github.com/spf13/cobra => ./spf13/cobra
-	github.com/spf13/jwalterweatherman => ./spf13/jwalterweatherman
-	github.com/spf13/pflag => ./spf13/pflag
-	github.com/tjfoc/gmsm v1.3.2 => ./tjfoc/gmsm
-	github.com/tjfoc/gmtls v1.2.1 => ./tjfoc/gmtls
+	github.com/ChinaArJun/fabric-sdk-go-gm/cfssl v0.0.0-20210922064845-3c3d2e71b967 => github.com/ChinaArJun/fabric-sdk-go-gm/cfssl v0.0.0-20210922064845-3c3d2e71b967
+	github.com/spf13/cast v1.3.1 => github.com/ChinaArJun/fabric-sdk-go-gm/spf13/cast v0.0.0-20210922064845-3c3d2e71b967
+	github.com/spf13/cobra => github.com/ChinaArJun/fabric-sdk-go-gm/spf13/cobra v0.0.0-20210922064845-3c3d2e71b967
+	github.com/spf13/jwalterweatherman => github.com/ChinaArJun/fabric-sdk-go-gm/spf13/jwalterweatherman v0.0.0-20210922064845-3c3d2e71b967
+	github.com/spf13/pflag => github.com/ChinaArJun/fabric-sdk-go-gm/spf13/pflag v0.0.0-20210922064845-3c3d2e71b967
+	github.com/tjfoc/gmsm v1.3.2 => github.com/ChinaArJun/fabric-sdk-go-gm/tjfoc/gmsm  v0.0.0-20210922064845-3c3d2e71b967
+	github.com/tjfoc/gmtls v1.2.1 => github.com/ChinaArJun/fabric-sdk-go-gm/tjfoc/gmtls  v0.0.0-20210922064845-3c3d2e71b967
 )
