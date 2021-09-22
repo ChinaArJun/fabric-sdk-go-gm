@@ -32,10 +32,10 @@ import (
 	"math/big"
 	mrand "math/rand"
 
-	factory "github.com/VoneChain-CS/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/core"
+	factory "github.com/ChinaArJun/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/core"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/http"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/http"
 	"os"
 	"path"
 	"path/filepath"

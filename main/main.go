@@ -2,18 +2,18 @@ package main
 
 import (
 	"fmt"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/client"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/client/channel"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/client/ledger"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/client/msp"
-	mspclient "github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/client/msp"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/client/resmgmt"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/errors/retry"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/logging"
-	pmsp "github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/msp"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/core/config"
-	lcpackager "github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/ccpackager/lifecycle"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/client"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/client/channel"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/client/ledger"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/client/msp"
+	mspclient "github.com/ChinaArJun/fabric-sdk-go-gm/pkg/client/msp"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/client/resmgmt"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/errors/retry"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/logging"
+	pmsp "github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/msp"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/core/config"
+	lcpackager "github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/ccpackager/lifecycle"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fabsdk"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"log"
 	"os"
@@ -29,7 +29,8 @@ var (
 )
 
 const (
-	channelID      = "byfn-sys-channel"
+	//channelID      = "byfn-sys-channel"
+	channelID      = "mychannel"
 	newChannelID   = "byfn-sys-channel"
 	orgName        = "org1"
 	orgName2       = "org2"
@@ -37,7 +38,8 @@ const (
 	ordererOrgName = "OrdererOrg"
 	peer1          = "peer0.org1.example.com"
 	peer2          = "peer0.org2.example.com"
-	configPath     = "/mnt/nfs/vbaas/fabric/networks/gm10/test2.yaml"
+	//configPath     = "/mnt/nfs/vbaas/fabric/networks/gm10/test2.yaml"
+	configPath     = "/Users/mac/go/src/fabric-sdk-go-gm/main/config.yaml"
 )
 
 func queryInstalledCC(sdk *fabsdk.FabricSDK) {
@@ -183,14 +185,17 @@ func readInput() {
 	cc = os.Args[4]
 }
 
-func main2() {
+func main() {
 	//readInput()
+
 	user = "admin"
 	secret = "adminpw"
 	channelName = "mychannel"
 	cc = "mycc_3"
+
 	fmt.Println("Reading connection profile..")
-	c := config.FromFile("/opt/goworkspace/src/github.com/VoneChain-CS/fabric-sdk-go-gm/main/config_test.yaml")
+	//c := config.FromFile("/opt/goworkspace/src/github.com/ChinaArJun/fabric-sdk-go-gm/main/config_test.yaml")
+	c := config.FromFile("/Users/mac/go/src/fabric-sdk-go-gm/main/config.yaml")
 	sdk, err := fabsdk.New(c)
 	if err != nil {
 		fmt.Printf("Failed to create new SDK: %s\n", err)
@@ -202,15 +207,29 @@ func main2() {
 	//registerUser(user,secret,sdk)
 	//enrollUser(sdk)
 
+	//clientContext := sdk.Context(fabsdk.WithUser(orgAdmin), fabsdk.WithOrg(ordererOrgName))
+	//
+	//// Resource management client is responsible for managing channels (create/update channel)
+	//// Supply user that has privileges to create channel (in this case orderer admin)
+	//resMgmtClient, err := resmgmt.New(clientContext)
+	//if err != nil {
+	//	log.Print(err)
+	//}
+
+	//createChannel(sdk,resMgmtClient)
+	//
 	//prepare context
 	adminContext := sdk.Context(fabsdk.WithUser(orgAdmin), fabsdk.WithOrg(ordererOrgName))
 
-	// Org resource management client
+	//Org resource management client
 	orgResMgmt, err := resmgmt.New(adminContext)
+	//
+	//if err != nil {
+	//
+	//}
+	//joinChannel(orgResMgmt)
 
-	if err != nil {
 
-	}
 	/*label ,ccPkg :=packageCC("/opt/goworkspace/src/github.com/VoneChain-CS/fabric-gm/scripts/fabric-samples/chaincode/abstore/go")
 	installCC(label,ccPkg,orgResMgmt)
 	packageID := lcpackager.ComputePackageID(label, ccPkg)
@@ -219,13 +238,12 @@ func main2() {
 
 	//commitCC(orgResMgmt)
 	//queryInstalled(cc,"mycc_1:e3f65f810b94ef30acada1caaf823e2e919d97df56672493e65d8fa0fcad4d6c",orgResMgmt)
-	//queryApprovedCC(orgResMgmt)
+	queryApprovedCC(orgResMgmt)
 
-	joinChannel(orgResMgmt)
 	//QueryConfigFromOrderer(channelID,orgResMgmt)
 	//QueryInstantiatedChaincodes(channelID,orgResMgmt)
 	//checkCCCommitReadiness("mycc_1:e3f65f810b94ef30acada1caaf823e2e919d97df56672493e65d8fa0fcad4d6c",orgResMgmt)
-	//queryCommittedCC(orgResMgmt)
+	queryCommittedCC(orgResMgmt)
 	//clientContext allows creation of transactions using the supplied identity as the credential.
 	/*clientContext := sdk.Context(fabsdk.WithUser(orgAdmin), fabsdk.WithOrg(ordererOrgName))
 
@@ -238,7 +256,7 @@ func main2() {
 
 	createChannel(sdk,resMgmtClient)*/
 
-	/*clientChannelContext := sdk.ChannelContext(channelName, fabsdk.WithUser(user))
+	clientChannelContext := sdk.ChannelContext(channelName, fabsdk.WithUser(user))
 	ledgerClient, err := ledger.New(clientChannelContext)
 	if err != nil {
 		fmt.Printf("Failed to create channel [%s] client: %#v", channelName, err)
@@ -247,7 +265,7 @@ func main2() {
 
 	fmt.Printf("\n===== Channel: %s ===== \n", channelName)
 	queryChannelInfo(ledgerClient)
-	queryChannelConfig(ledgerClient)*/
+	queryChannelConfig(ledgerClient)
 
 	/*	fmt.Println("\n====== Chaincode =========")
 
@@ -266,9 +284,10 @@ func main2() {
 func main10() {
 	client.Update(configPath, "gm10Org2", "orderer.gm10.vbaas.com", "/mnt/nfs/vbaas/fabric/networks/gm10/channel-artifacts/", "successchannel")
 }
-func main() {
+func main90() {
 	setupLogLevel()
-	client.Create("Admin", "successchannel", "/mnt/nfs/vbaas/fabric/networks/gm10/channel-artifacts/gm10Org2MSPanchors.tx", configPath, "orderer.gm10.vbaas.com", "ordererorg")
+	//client.Create("Admin", "successchannel", "/mnt/nfs/vbaas/fabric/networks/gm10/channel-artifacts/gm10Org2MSPanchors.tx", configPath, "orderer.gm10.vbaas.com", "ordererorg")
+	client.Create("Admin", "successchannel", "./channel-artifacts/Org2MSPanchors.tx", configPath, "orderer.finebaas.com", "ordererorg")
 }
 func main6() {
 	client.E2eModifyChannel("successchannel", configPath, "gm10Org2", "orderer.gm10.vbaas.com", "/mnt/nfs/vbaas/fabric/networks/gm10/channel-artifacts/modified_config2.json")
@@ -389,10 +408,10 @@ func createChannel(sdk *fabsdk.FabricSDK, resMgmtClient *resmgmt.Client) {
 	}
 
 	req := resmgmt.SaveChannelRequest{ChannelID: "mychannel",
-		ChannelConfigPath: "/opt/goworkspace/src/github.com/VoneChain-CS/fabric-gm/scripts/fabric-samples/first-network/channel-artifacts/" + "channel.tx",
+		ChannelConfigPath: "./channel-artifacts/" + "mychannel.tx",
 		//ChannelConfig: channelConfig,
 		SigningIdentities: []pmsp.SigningIdentity{adminIdentity}}
-	txID, _ := resMgmtClient.SaveChannel(req, resmgmt.WithRetry(retry.DefaultResMgmtOpts), resmgmt.WithOrdererEndpoint("orderer.example.com"))
+	txID, _ := resMgmtClient.SaveChannel(req, resmgmt.WithRetry(retry.DefaultResMgmtOpts), resmgmt.WithOrdererEndpoint("orderer.finebaas.com"))
 	log.Print(txID)
 
 }
@@ -400,7 +419,7 @@ func createChannel(sdk *fabsdk.FabricSDK, resMgmtClient *resmgmt.Client) {
 func joinChannel(orgResMgmt *resmgmt.Client) {
 
 	// Org peers join channel
-	if err := orgResMgmt.JoinChannel(newChannelID, resmgmt.WithRetry(retry.DefaultResMgmtOpts), resmgmt.WithOrdererEndpoint("orderer.example.com")); err != nil {
+	if err := orgResMgmt.JoinChannel(newChannelID, resmgmt.WithRetry(retry.DefaultResMgmtOpts), resmgmt.WithOrdererEndpoint("orderer.finebaas.com")); err != nil {
 		fmt.Print(err)
 	}
 }

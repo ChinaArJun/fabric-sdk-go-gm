@@ -16,7 +16,7 @@ import (
 	"encoding/json"
 	"encoding/pem"
 	"fmt"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/http"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/http"
 	"github.com/cloudflare/cfssl/log"
 	"github.com/grantae/certinfo"
 	tls "github.com/tjfoc/gmtls"
@@ -25,7 +25,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"
 	"github.com/tjfoc/gmsm/sm2"

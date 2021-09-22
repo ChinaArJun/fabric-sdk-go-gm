@@ -7,10 +7,10 @@ SPDX-License-Identifier: Apache-2.0
 package balancedsorter
 
 import (
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/client/common/selection/options"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/logging"
-	coptions "github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/options"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/client/common/selection/options"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/logging"
+	coptions "github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/options"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/fab"
 )
 
 var logger = logging.NewLogger("fabsdk/client")

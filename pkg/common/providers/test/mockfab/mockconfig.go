@@ -11,7 +11,7 @@ import (
 	tls "github.com/tjfoc/gmtls"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/fab"
 	"github.com/golang/mock/gomock"
 	"github.com/pkg/errors"
 )

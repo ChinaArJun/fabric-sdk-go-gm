@@ -9,14 +9,14 @@ package dispatcher
 import (
 	"time"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/options"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/events/client/lbp"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/balanced"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/minblockheight"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/preferorg"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/options"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/events/client/lbp"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/balanced"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/minblockheight"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/preferorg"
 )
 
 const (

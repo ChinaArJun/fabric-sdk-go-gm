@@ -8,9 +8,9 @@ package provider
 import (
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fabsdk"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/test/integration"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/test/integration/util/runner"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/test/integration"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/test/integration/util/runner"
 )
 
 const (

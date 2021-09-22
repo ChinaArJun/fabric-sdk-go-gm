@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/core/chaincode/shim"
-	pb "github.com/VoneChain-CS/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/protos/peer"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/core/chaincode/shim"
+	pb "github.com/ChinaArJun/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/protos/peer"
 )
 
 // EventSender example simple Chaincode implementation

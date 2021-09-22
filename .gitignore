@@ -1,0 +1,8 @@
+.idea
+.DS_Store
+logs
+logs/*
+main
+main/main.go
+crypto-config
+channel-artifacts

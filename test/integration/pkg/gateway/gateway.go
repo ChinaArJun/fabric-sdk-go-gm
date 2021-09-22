@@ -14,12 +14,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/core/config"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fabsdk"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/gateway"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/test/integration"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/test/metadata"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/core/config"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/gateway"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/test/integration"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/test/metadata"
 )
 
 const (

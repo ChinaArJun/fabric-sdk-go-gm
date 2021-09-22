@@ -6,7 +6,7 @@ package httptrace_test
 
 import (
 	"fmt"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/http/httptrace"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/http/httptrace"
 	"log"
 	"net/http"
 )

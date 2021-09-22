@@ -7,12 +7,12 @@ SPDX-License-Identifier: Apache-2.0
 package balanced
 
 import (
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/logging"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/options"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/events/service"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/logging"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/options"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/events/service"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")

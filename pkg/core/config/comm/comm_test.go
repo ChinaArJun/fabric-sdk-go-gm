@@ -21,7 +21,7 @@ import (
 
 	"crypto/x509"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/test/mockfab"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/test/mockfab"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 )

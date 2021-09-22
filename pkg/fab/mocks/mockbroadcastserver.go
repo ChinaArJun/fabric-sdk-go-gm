@@ -12,8 +12,8 @@ import (
 	"net"
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/events/service/mocks"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/util/test"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/events/service/mocks"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/util/test"
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/common"
 	po "github.com/hyperledger/fabric-protos-go/orderer"

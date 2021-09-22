@@ -12,7 +12,7 @@ import (
 
 	"bytes"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/core/logging/api"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/core/logging/api"
 )
 
 var logPrefixFormatter = " [%s] "

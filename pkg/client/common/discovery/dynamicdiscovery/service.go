@@ -10,12 +10,12 @@ import (
 	"sync"
 	"time"
 
-	discclient "github.com/VoneChain-CS/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/discovery/client"
-	coptions "github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/options"
-	contextAPI "github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/fab"
-	fabdiscovery "github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/discovery"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/util/concurrent/lazyref"
+	discclient "github.com/ChinaArJun/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/discovery/client"
+	coptions "github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/options"
+	contextAPI "github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/fab"
+	fabdiscovery "github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/discovery"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/util/concurrent/lazyref"
 	"github.com/pkg/errors"
 )
 

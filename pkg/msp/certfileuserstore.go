@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package msp
 
 import (
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/msp"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/keyvaluestore"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/msp"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/keyvaluestore"
 	"github.com/pkg/errors"
 )
 

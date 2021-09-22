@@ -7,16 +7,16 @@ SPDX-License-Identifier: Apache-2.0
 package chpvdr
 
 import (
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/client/common/discovery/dynamicdiscovery"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/client/common/discovery/staticdiscovery"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/client/common/selection/dynamicselection"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/client/common/selection/fabricselection"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/options"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/channel/membership"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/chconfig"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/events/deliverclient"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/util/concurrent/lazycache"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/client/common/discovery/dynamicdiscovery"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/client/common/discovery/staticdiscovery"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/client/common/selection/dynamicselection"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/client/common/selection/fabricselection"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/options"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/channel/membership"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/chconfig"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/events/deliverclient"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/util/concurrent/lazycache"
 	"github.com/pkg/errors"
 )
 

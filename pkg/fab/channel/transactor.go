@@ -12,11 +12,11 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/fab"
-	contextImpl "github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/context"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/core/config/endpoint"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/txn"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/fab"
+	contextImpl "github.com/ChinaArJun/fabric-sdk-go-gm/pkg/context"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/core/config/endpoint"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/txn"
 )
 
 // Transactor enables sending transactions and transaction proposals on the channel.

@@ -11,7 +11,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/util/test"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/util/test"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 )
 

@@ -11,8 +11,8 @@ import (
 
 	"github.com/hyperledger/fabric-protos-go/common"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/fab"
 	msp "github.com/hyperledger/fabric-protos-go/msp"
 )
 

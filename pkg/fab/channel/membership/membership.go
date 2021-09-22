@@ -12,11 +12,11 @@ import (
 
 	"strings"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/msp"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/client/common/verifier"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/logging"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/msp"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/client/common/verifier"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/logging"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/fab"
 	"github.com/golang/protobuf/proto"
 	mb "github.com/hyperledger/fabric-protos-go/msp"
 	"github.com/pkg/errors"

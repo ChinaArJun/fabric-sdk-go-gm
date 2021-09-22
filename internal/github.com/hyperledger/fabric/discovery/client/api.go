@@ -11,7 +11,7 @@ Please review third_party pinning scripts and patches for more details.
 package discovery
 
 import (
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/gossip/protoext"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/gossip/protoext"
 	"github.com/hyperledger/fabric-protos-go/discovery"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"

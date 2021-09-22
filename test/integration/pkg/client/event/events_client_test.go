@@ -10,12 +10,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/client/channel"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/client/event"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/errors/retry"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/events/deliverclient/seek"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fabsdk"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/test/integration"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/client/channel"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/client/event"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/errors/retry"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/events/deliverclient/seek"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/test/integration"
 )
 
 func TestDefaultEventClient(t *testing.T) {

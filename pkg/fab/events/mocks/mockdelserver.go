@@ -10,8 +10,8 @@ import (
 	"io"
 	"sync"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/mocks"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/util/test"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/mocks"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/util/test"
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/pkg/errors"

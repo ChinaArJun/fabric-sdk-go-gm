@@ -11,8 +11,8 @@ Please review third_party pinning scripts and patches for more details.
 package statsd
 
 import (
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/common/metrics"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/common/metrics/internal/namer"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/common/metrics"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/common/metrics/internal/namer"
 	"github.com/go-kit/kit/metrics/statsd"
 )
 

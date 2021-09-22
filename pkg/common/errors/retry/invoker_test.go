@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/errors/status"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/errors/status"
 	"github.com/stretchr/testify/assert"
 )
 

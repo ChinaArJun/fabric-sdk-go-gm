@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/core/config"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/test/metadata"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/core/config"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/test/metadata"
 )
 
 const (

@@ -12,7 +12,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp/pkcs11"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp/pkcs11"
 	"github.com/stretchr/testify/assert"
 )
 

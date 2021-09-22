@@ -20,8 +20,8 @@ import (
 	"net/url"
 	"regexp"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/core/chaincode/platforms/util"
-	flogging "github.com/VoneChain-CS/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/core/chaincode/platforms/util"
+	flogging "github.com/ChinaArJun/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 )
 

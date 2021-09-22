@@ -10,7 +10,7 @@ import (
 	"github.com/tjfoc/gmsm/sm2"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/errors/retry"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/errors/retry"
 )
 
 // NetworkConfig provides a static definition of endpoint configuration network

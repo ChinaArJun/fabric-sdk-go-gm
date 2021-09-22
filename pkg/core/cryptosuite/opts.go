@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package cryptosuite
 
 import (
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/core"
 	"github.com/pkg/errors"
 )
 

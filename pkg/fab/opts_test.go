@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/fab"
-	commtls "github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/core/config/comm/tls"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/fab"
+	commtls "github.com/ChinaArJun/fabric-sdk-go-gm/pkg/core/config/comm/tls"
 )
 
 var (

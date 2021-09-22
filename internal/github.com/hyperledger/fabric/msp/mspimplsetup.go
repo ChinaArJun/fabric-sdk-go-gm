@@ -17,7 +17,7 @@ import (
 	"github.com/tjfoc/gmsm/sm2"
 	"time"
 
-	bccsp "github.com/VoneChain-CS/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/sdkpatch/cryptosuitebridge"
+	bccsp "github.com/ChinaArJun/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/sdkpatch/cryptosuitebridge"
 	"github.com/golang/protobuf/proto"
 	m "github.com/hyperledger/fabric-protos-go/msp"
 	errors "github.com/pkg/errors"

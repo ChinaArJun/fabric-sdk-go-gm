@@ -9,10 +9,10 @@ package mocks
 import (
 	"time"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/fab"
-	contextImpl "github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/context"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/fab/txn"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/fab"
+	contextImpl "github.com/ChinaArJun/fabric-sdk-go-gm/pkg/context"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/fab/txn"
 	"github.com/pkg/errors"
 )
 

@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package channel
 
 import (
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/errors/status"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/errors/status"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/fab"
 	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
 )

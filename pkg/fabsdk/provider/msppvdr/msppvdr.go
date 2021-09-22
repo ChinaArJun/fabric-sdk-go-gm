@@ -9,10 +9,10 @@ package msppvdr
 import (
 	"strings"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/providers/msp"
-	mspimpl "github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/msp"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/providers/msp"
+	mspimpl "github.com/ChinaArJun/fabric-sdk-go-gm/pkg/msp"
 	"github.com/pkg/errors"
 )
 

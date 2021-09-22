@@ -9,7 +9,7 @@ package retry
 import (
 	"time"
 
-	"github.com/VoneChain-CS/fabric-sdk-go-gm/pkg/common/errors/status"
+	"github.com/ChinaArJun/fabric-sdk-go-gm/pkg/common/errors/status"
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	grpcCodes "google.golang.org/grpc/codes"

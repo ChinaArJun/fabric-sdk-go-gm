@@ -1,4 +1,4 @@
-module github.com/VoneChain-CS/fabric-sdk-go-gm/cfssl
+module github.com/ChinaArJun/fabric-sdk-go-gm/cfssl
 
 go 1.14
 
