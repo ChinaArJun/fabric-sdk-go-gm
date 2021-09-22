@@ -4,7 +4,7 @@ go 1.14
 
 require (
 	contrib.go.opencensus.io/resource v0.1.1 // indirect
-	github.com/ChinaArJun/fabric-sdk-go-gm/cfssl v1.0.1
+	github.com/ChinaArJun/fabric-sdk-go-gm/cfssl v1.2.3
 	github.com/Knetic/govaluate v3.0.0+incompatible
 	github.com/VividCortex/gohistogram v1.0.0 // indirect
 	//github.com/VoneChain-CS/fabric-sdk-go-gm v1.0.0 // indirect
@@ -39,7 +39,7 @@ require (
 )
 
 replace (
-	github.com/ChinaArJun/fabric-sdk-go-gm/cfssl v1.0.1 => ./cfssl
+	github.com/ChinaArJun/fabric-sdk-go-gm/cfssl v1.2.3 => ./cfssl
 	github.com/spf13/cast v1.3.1 => ./spf13/cast
 	github.com/spf13/cobra => ./spf13/cobra
 	github.com/spf13/jwalterweatherman => ./spf13/jwalterweatherman
